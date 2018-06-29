@@ -1,0 +1,15 @@
+Client\ConsoleClient.class
+Application\Addition.class
+Client\IIHM.class
+Application\Launcher.class
+Application\ExceptionEnum.class
+Application\Multiplication.class
+Application\AppliCalculatrice.class
+Application\Factorielle.class
+Application\IHM.class
+Application\Calculatrice.class
+Application\Division.class
+Application\CalculatriceException.class
+controller\Calculate.class
+Application\Operation.class
+Application\Soustraction.class

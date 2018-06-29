@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: hello.GreetingControllerTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.762 s <<< FAILURE! - in hello.GreetingControllerTests
+noParamGreetingShouldReturnDefaultMessage(hello.GreetingControllerTests)  Time elapsed: 0.125 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at hello.GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage(GreetingControllerTests.java:42)
+
+paramGreetingShouldReturnTailoredMessage(hello.GreetingControllerTests)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at hello.GreetingControllerTests.paramGreetingShouldReturnTailoredMessage(GreetingControllerTests.java:50)
+

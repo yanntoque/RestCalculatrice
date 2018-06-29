@@ -17,15 +17,19 @@ public class GreetingController
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/calculate")
-    public Greeting calculate(@RequestParam(value = "operande2", defaultValue = "") Double operand1, @RequestParam(value = "operande", defaultValue = "") Double operand2,@RequestParam(value = "operation", defaultValue = "") Character operation) throws CalculatriceException {
+    public Greeting calculate(@RequestParam(value = "operande2", defaultValue = "") Double operand1,
+                              @RequestParam(value = "operande", defaultValue = "") Double operand2,
+                              @RequestParam(value = "operation", defaultValue = "") Character operation) throws CalculatriceException {
         Double result;
-        try {
-            result = Calculate.calculate(operand1,operand2,operation);
+        try
+        {
+            result = Calculate.calculate(operand1, operand2, operation);
             System.out.println("result : " + result);
-        } finally {
+        } finally
+        {
             System.out.println("nothing");
         }
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, result));
-}
+    }
 }
